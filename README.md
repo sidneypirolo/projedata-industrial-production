@@ -95,11 +95,11 @@ Unit tests were implemented in the backend to validate the production optimizati
 
 ## Functionalities Implemented
 
-✔ CRUD for Raw Materials  
-✔ CRUD for Products  
-✔ Production optimization calculation  
-✔ REST API  
-✔ Simple frontend interface  
+-CRUD for Raw Materials  
+-CRUD for Products  
+-Production optimization calculation  
+-REST API  
+-Simple frontend interface  
 
 
 ## Author
