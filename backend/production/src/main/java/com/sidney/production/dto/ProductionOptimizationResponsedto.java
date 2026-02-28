@@ -3,13 +3,13 @@ package com.sidney.production.dto;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class ProductionOptimizationResponseDTO {
+public class ProductionOptimizationResponsedto {
 
     private BigDecimal totalEstimatedRevenue;
-    private List<ProductionPlanItemDTO> productionPlan;
+    private List<ProductionPlanItemdto> productionPlan;
 
-    public ProductionOptimizationResponseDTO(BigDecimal totalEstimatedRevenue,
-                                             List<ProductionPlanItemDTO> productionPlan) {
+    public ProductionOptimizationResponsedto(BigDecimal totalEstimatedRevenue,
+                                             List<ProductionPlanItemdto> productionPlan) {
         this.totalEstimatedRevenue = totalEstimatedRevenue;
         this.productionPlan = productionPlan;
     }
@@ -18,7 +18,7 @@ public class ProductionOptimizationResponseDTO {
         return totalEstimatedRevenue;
     }
 
-    public List<ProductionPlanItemDTO> getProductionPlan() {
+    public List<ProductionPlanItemdto> getProductionPlan() {
         return productionPlan;
     }
 }

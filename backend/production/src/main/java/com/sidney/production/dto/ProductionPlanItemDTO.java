@@ -2,13 +2,13 @@ package com.sidney.production.dto;
 
 import java.math.BigDecimal;
 
-public class ProductionPlanItemDTO {
+public class ProductionPlanItemdto {
 
     private String productName;
     private int quantity;
     private BigDecimal estimatedRevenue;
 
-    public ProductionPlanItemDTO(String productName,
+    public ProductionPlanItemdto(String productName,
                                   int quantity,
                                   BigDecimal estimatedRevenue) {
         this.productName = productName;

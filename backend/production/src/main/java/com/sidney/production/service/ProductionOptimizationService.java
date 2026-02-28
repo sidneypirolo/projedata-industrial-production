@@ -17,7 +17,7 @@ public class ProductionOptimizationService {
         this.productRepository = productRepository;
     }
 
-    public ProductionOptimizationResponseDTO optimizeProduction() {
+    public ProductionOptimizationResponsedto optimizeProduction() {
 
         List<Product> products = productRepository.findAll();
 
@@ -28,7 +28,7 @@ public class ProductionOptimizationService {
 
         BigDecimal totalRevenue = BigDecimal.ZERO;
 
-        List<ProductionPlanItemDTO> planItems = new ArrayList<>();
+        List<ProductionPlanItemdto> planItems = new ArrayList<>();
 
         for (Product product : products) {
 
@@ -65,7 +65,7 @@ public class ProductionOptimizationService {
                 totalRevenue = totalRevenue.add(revenue);
 
                 planItems.add(
-                        new ProductionPlanItemDTO(
+                        new ProductionPlanItemdto(
                                 product.getName(),
                                 maxProduction,
                                 revenue
@@ -74,7 +74,7 @@ public class ProductionOptimizationService {
             }
         }
 
-        return new ProductionOptimizationResponseDTO(
+        return new ProductionOptimizationResponsedto(
                 totalRevenue,
                 planItems
         );

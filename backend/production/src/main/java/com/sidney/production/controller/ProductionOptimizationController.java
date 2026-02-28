@@ -1,6 +1,6 @@
 package com.sidney.production.controller;
 
-import com.sidney.production.dto.ProductionOptimizationResponseDTO;
+import com.sidney.production.dto.ProductionOptimizationResponsedto;
 import com.sidney.production.service.ProductionOptimizationService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +15,7 @@ public class ProductionOptimizationController {
     }
 
     @GetMapping("/production-optimization")
-    public ProductionOptimizationResponseDTO optimize() {
+    public ProductionOptimizationResponsedto optimize() {
         return optimizationService.optimizeProduction();
     }
 }
